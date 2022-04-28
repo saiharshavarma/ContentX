@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'global/css/global.css' %}">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
+  <title>About - ContentX</title>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="../">Home</a>
+    <a href="../emo/">EmoX</a>
+    <a href="../insights">InsightsX</a>
+    <a href="../keywords/">KeywordsX</a>
+    <a href="../settings/">Settings</a>
+    <a href="" class="active">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- <br> -->
+  <h1 align="center" style="padding:3%;color:#04AA6D; font-family: 'Bona Nova', serif;">About</h1>
+  <div style="margin-left: 50px; margin-right: 50px;">
+    <h2>What is ContentX?</h2>
+    <br>
+    <b>"Ah, if only I could get someone to read this for feedback."</b><br>
+    <b>"Only if I could know which keywords to target..."</b><br>
+    <br>
+    We all have been there, haven't we?<br>
+    <br>
+    ContentX is a Python3 project developed just for that. To be a constant companion throughout your content writing
+    process. By content writers, for content writers.<br><br>
+
+    <h2>Salient features:</h2><br>
+    <ul>
+      <li>Hassle-free installation</li>
+      <li>Can work without Internet (some modules need them though.)</li>
+    </ul>
+    <br>
+    <h2>Installation:</h2>
+    <br>
+    <p>ContentX doesn&#39;t require any lengthy installation process. You can do in any of the following ways:</p>
+    <ol>
+      <li>
+        <p>You can simply download, resolve its dependencies, and build it. </p>
+      </li>
+      <li>
+        <p>If you are a Windows user, you can run <code>setup.bat</code> by double clicking it. If you are a Linux user,
+          a simple <code>./setup.sh</code> will do.</p>
+      </li>
+    </ol>
+    <p>But ensure that you have a proper Internet connection and Python installed and properly configured. Windows users
+      may need to check if Python is added to the PATH environment variable in their systems.</p>
+    <br><br>
+    <h3>Steps (for those who chose to build it):</h3>
+    <ol start="0">
+      <li>Download this project code and open the top-level directory.</li>
+      <li>Install the Python dependencies using <code>pip install -r requirements.txt</code> (or
+        <code>pip3 install -r requirements.txt</code> if you have two versions of Python installed.)
+      </li>
+      <li>Run <code>init.py</code> using <code>python init.py</code> (or <code>python3 init.py</code> if you have two
+        versions of Python installed.)</li>
+      <li>Run <code>manage.py</code> using <code>python manage.py runserver</code> (or
+        <code>python3 manage.py runserver</code> if you have two versions of Python installed.)
+      </li>
+    </ol>
+    <br>
+    <h2 id="starting-up-">Starting up:</h2>
+    <ol>
+      <li>If you are a Windows user, you can run <code>start.bat</code> by double clicking it. If you are a Linux user,
+        a simple <code>./start.sh</code> will do.</li>
+      <li>If you built it from scratch, follow steps 0 and 3 above.</li>
+      <li>Open <code>127.0.0.1:8000</code> or `<code>localhost:8000</code> on your browser if you have installed with
+        default settings.</li>
+    </ol>
+    <br>
+    <br>
+    <p align="center" style="font-size: 20px;">Made by <a href="https://github.com/anuran-roy">Anuran</a>, <a
+        href="https://github.com/saiharshavarma">Sai Harsha Varma</a> and <a href="#">Radhika Nathani</a></p>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="{% static 'global/js/global.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
