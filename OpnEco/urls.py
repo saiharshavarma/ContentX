@@ -20,9 +20,9 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path('emo/', include('OpnEmo.urls')),
-    path('keywords/', include('OpnKeywords.urls')),
-    path('insights/', include('OpnInsights.urls')),
+    path('emo/', include('EmoX.urls')),
+    path('keywords/', include('KeywordsX.urls')),
+    path('insights/', include('InsightsX.urls')),
     path('settings/', views.settings),
     path('about/', views.about),
 ]

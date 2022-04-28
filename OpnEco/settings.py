@@ -31,9 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'OpnEmo.apps.OpnemoConfig',
-    'OpnKeywords.apps.OpnkeywordsConfig',
-    'OpnInsights.apps.OpninsightsConfig',
+    'EmoX.apps.EmoxConfig',
+    'KeywordsX.apps.KeywordsxConfig',
+    'InsightsX.apps.InsightsxConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

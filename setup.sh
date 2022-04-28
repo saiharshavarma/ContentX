@@ -3,7 +3,7 @@
 echo "Installing OpnEco..."
 echo "Step 1/5: Copying files to /usr/local/OpnEco..."
 sudo mkdir /usr/local/OpnEco
-sudo cp -R ./OpnEco/ ./OpnEmo/ ./OpnInsights/ ./OpnKeywords/ ./static/ ./templates/ ./manage.py ./db.sqlite3 ./init.py ./requirements.txt ./README.md ./start.sh /usr/local/OpnEco
+sudo cp -R ./OpnEco/ ./EmoX/ ./InsightsX/ ./KeywordsX/ ./static/ ./templates/ ./manage.py ./db.sqlite3 ./init.py ./requirements.txt ./README.md ./start.sh /usr/local/OpnEco
 echo "Step 2/5: Resolving dependencies..."
 pip3 install -r /usr/local/OpnEco/requirements.txt
 echo "Step 3/5: Initializing for first run..."

@@ -2,8 +2,10 @@ from django.shortcuts import render
 from .scripts import keywords
 # Create your views here.
 
+
 def index(request):
-    return render(request, 'OpnKeywords/index.html')
+    return render(request, 'KeywordsX/index.html')
+
 
 def analyze(request):
     data = request.POST.get('toAnalyze', 'default')
@@ -15,4 +17,4 @@ def analyze(request):
         knum = 10
     op = keywords.execute(knum, data)
 
-    return render(request, 'OpnKeywords/results.html', {'fig': op})
+    return render(request, 'KeywordsX/results.html', {'fig': op})
